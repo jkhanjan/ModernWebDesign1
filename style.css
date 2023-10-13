@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background: #edbfff;
+    z-index: 1;
+    mix-blend-mode: difference;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+}
+#purple{
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    background-color: #edbfff;
+    opacity: 0;
+    display: none;
+    z-index: 100;
+    transition: opacity ease 1s;
+}
+#main{
+    background-color: #0f0d0d;
+}
+
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding-top: 12vw;
+}
+#nav{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 99;
+    cursor: none;
+}
+#nav img{
+    height: 26px;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#nav #circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#nav h4{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#nav h4:nth-child(1){
+    border-bottom: 2px solid #fff;
+}
+.page1 h1{
+    font-size: 8.5vw;
+    font-weight: 500;
+    margin-left: 6vw;
+}
+.page1 h2{
+    font-size: 8.5vw;
+    font-weight: 500;
+    margin-left: 26vw;
+    position: relative;
+    z-index: 9;
+}
+
+.page1 video{
+    width: 60%;
+    margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px 2vw;
+    border-bottom: 2px solid #6c6c6c;
+}
+
+.page2 h1{
+    font-size: 7vw;
+    font-weight: 200;
+    color: #111;
+    margin-left: 60px;
+}
+.page2-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+.page2-left{
+    width: 40%;
+}
+.page2-right{
+    width: 25%;   
+}
+.page2-left h2{
+    font-size: 3.7vw;
+    font-weight:100;
+    color: #111;
+    line-height: 4vw;
+}
+
+.page2-right p{
+    font-size: 18px;
+    color: #111;
+}
+
+.page2-right button{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 0;
+    background-color: #edbfff;
+    color: #111;
+    margin-top: 20px;
+}
+
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+    z-index: 9;
+}
+
+.page3 h1{
+    font-size: 6.8vw;
+    font-weight: 300;
+    color: #111;
+    margin-left: 100px;
+}
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.page3-part1 img{
+    height: 400px;
+    margin-top: 160px;
+}
+.page3-part1 video{
+    height: 400px;
+    margin-top: 40px;
+}
+
+.page4{
+    min-height: 120vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    padding: 190px 100px;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+.elem h1{
+    font-size: 7.4vw;
+    transition: all ease 0.5s;
+}
+.text-div{
+    height: 130px;
+    overflow: hidden;
+}
+.text-div h1{
+    font-weight: 300;
+}
+.elem img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease 0.5s;
+    transform: translateY(10%) rotate(10deg);
+    height: 320px;
+    width: 320px;
+}
+.elem img:nth-child(1){
+    left: 0%;
+}
+.elem img:nth-child(3){
+    right: 5%;
+}
+
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #edbfff;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 100px 80px;
+}
+.page5 h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 0px;
+    border-top: 1.5px solid #dadada;
+}
+footer{
+    height: 115vh;
+    width: 100%;
+    background-color: #edbfff;
+}
+.footer-content h1{
+    font-size: 8vw;
+    color: #111;
+    font-weight: 300;
+}
+.footer-content{
+    display: flex;
+    gap: 300px;
+    padding:220px 100px;
+}
+.footer-content button{
+    color: #111;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: none;
+}
+footer h2{
+    color: #111;
+    margin-left: 6rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+footer h4{
+    color: #111;
+}
+.footer-last{
+    display: flex;
+    margin-left: 6rem;
+    margin-top: 5rem;
+    gap: 60px;
+}
+.footer-last h4{
+    font-size: 0.9rem;
+}
+.footer-last p{
+    color: #111;
+    font-size: 0.8rem;
+}
+.footer-content button:hover{
+    background: black;
+    color: white;
+    transition: .5s ease-out;
+    transform: scale(1.2);
+}
